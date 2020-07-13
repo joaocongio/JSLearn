@@ -12,7 +12,7 @@
 
     const soma2 = (valor3, valor4) => valor3 + valor4
 
-    const multiplicar = valor => valor + valor // quando possui apenas um parametro, não é necessário colocar entre ()
+    const multiplicar = valor => valor * valor // quando possui apenas um parametro, não é necessário colocar entre ()
 
     const parImpar = numero => {
         if(numero % 2 === 0){

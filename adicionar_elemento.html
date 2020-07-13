@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Elemento</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        let container = document.querySelector('#app')
+
+        let novoParagrafo = document.createElement('p') // criando um elemento <p></p>
+            novoParagrafo.setAttribute('class', 'lista-paragrafo') // atribuindo uma class para o p, ficando <p class="lista-paragrafo"></p>
+
+        let textoParagrafo = document.createTextNode('Novo paragráfo!') // atribuindo um texto ao p, ficando <p class="lista-paragrafo">Novo paragráfo!</p>
+            novoParagrafo.appendChild(textoParagrafo) // adicionado o texto ao p
+            
+        container.appendChild(novoParagrafo) // adicionado o elemento p dentro do elemento div, id app
+    </script>
+</body>
+</html>
