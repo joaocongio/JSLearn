@@ -8,7 +8,7 @@ let Carro = function (){ // criando uma função construtora
        // this.velocidadeAtual += 10
 
        let velocidade = this.getVelocidadeAtual() + 10 // retorna a velocidade atual e adiciona + 10 na variavel velocidade
-            this.setVelocidadeAtual(velocidade) // pega a variavel velocidade e passa como parametro para o "método" set
+            this.setVelocidadeAtual(velocidade) // pega a variável velocidade e passa como parâmetro para o "método" set
     } 
 
     this.getVelocidadeAtual = function(){
@@ -16,7 +16,7 @@ let Carro = function (){ // criando uma função construtora
     }
 
     this.setVelocidadeAtual = function(velocidadeAtual){
-        this.velocidadeAtual = velocidadeAtual // velocidadeAtual é referente ao parametro passado, esta variavel está disponível apenas do bloco dessa função. Ela que vai receber o valor de velocidade
+        this.velocidadeAtual = velocidadeAtual // velocidadeAtual é referente ao parâmetro passado, esta variavel está disponível apenas do bloco dessa função. Ela que vai receber o valor de velocidade
             if(velocidadeAtual > 180){
                 console.log('nao')
             }
