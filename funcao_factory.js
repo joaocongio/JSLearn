@@ -1,7 +1,7 @@
 let bicicletaFactory = function(cor, marcha, aro, tipoPedal){
-    // lógica
-    // requisição http
-    // reposta http
+        // lógica
+        // requisição http
+        // reposta http
     return {
         cor,
         marcha,
