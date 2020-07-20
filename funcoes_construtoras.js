@@ -17,9 +17,6 @@ let Carro = function (){ // criando uma função construtora
 
     this.setVelocidadeAtual = function(velocidadeAtual){
         this.velocidadeAtual = velocidadeAtual // velocidadeAtual é referente ao parâmetro passado, esta variavel está disponível apenas do bloco dessa função. Ela que vai receber o valor de velocidade
-            if(velocidadeAtual > 180){
-                console.log('nao')
-            }
     }
 }
 
