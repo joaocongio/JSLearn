@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // todos os objetos do JS descendem de um Object
+        // qualquer objeto é filho de object
+
+
+    // objeto literal
+    let a1 = {
+        cor: 'Azul',
+        modelo: 'Gol',
+        levantarVoo: function() { console.log('Levantar Voo') }
+    }
+
+    // função construtora
+    let aviaoFunc = function(){
+        this.cor = 'Verde',
+        this.modelo = 'Boeing'
+        this.levantarVoo = function() { console.log('Levantar Voo') }
+    }
+
+    let a2 = new aviaoFunc()
+
+    // classe
+    class aviaoClass {
+        constructor(){
+            this.cor = 'Vermelho'
+            this.modelo = 'Embraer'
+        }
+
+        levantarVoo(){
+            console.log('Levantar Voo')
+        }
+    }
+
+    let a3 = new aviaoClass()
+
+    console.log(a1)
+    console.log(a2)
+    console.log(a3)
+    </script>
+</body>
+</html>

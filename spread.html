@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // spread = espalhar
+
+        let cursos1 = ['HTML', 'CSS', 'JS']
+        let cursos2 = ['NodeJS', 'MongoDB', 'PHP']
+        let cursosCompleto = ['React', 'SQL', ...cursos1, ...cursos2]
+
+        console.log(cursosCompleto)
+
+        let pessoa = { nome: 'João', idade: 23 }
+        let clonar = { endereco: 'Rua X', ...pessoa}
+
+        console.log(clonar)
+    </script>
+</body>
+</html>

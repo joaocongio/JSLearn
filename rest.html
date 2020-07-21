@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // rest = juntar
+
+        function soma(...param){ // ...param está recebendo todos os valores informados em soma(), ou seja function soma(2,4,6,8)
+            let resultado = 0
+
+            param.forEach(v => resultado += v) // através do forEach, vai ser percorrido o valor para fazer a atribuição e soma dos valores
+            
+            return resultado
+        }
+
+        console.log(soma(2,4,6,8))
+
+        function multiplicacao(multiplicar, ...parms){ // multplicar vai ser receber o primeiro valor passado, ou seja 2 e o restante o ...params irá buscar, ficando function multiplicacao(2, 4,2,10,20)
+            let result = 0
+
+            parms.forEach(v => result += multiplicar * v)
+            
+            return result
+        }
+
+        console.log(multiplicacao(2,4,2,10,20))
+    </script>
+</body>
+</html>
