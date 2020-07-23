@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let frutas = ['Morango', 'Maça', 'Jabuticaba', 'Melancia']
+
+        let [indice0, indice1] = frutas // aqui está sendo feito a desestruturação da variavel frutas indice0 e indice1 está resgatando os valores do indice 0 e 1
+      // let [indice0, , indice2] = frutas = pula o indice1 e recupera apenas o valor do indice0 e indice2
+        console.log(indice0, indice1)
+
+        let aleatorios = [['Gol', 'Corsa', 'Fusca', 'Ferrari'], ['João', 'Maria', 'Antonio']]
+
+        // let [,[x]] = aleatorios // o array de indice 0 (carros) deixei vazio para não retornar valor, e no outro array defini que quero apenas o indice0 do array com nomes
+        // let [[,,fusc],] = aleatorios = estou buscando no array carros somente a string fusca que está no indice2
+        let [[,cors], [,,ant]] = aleatorios // dentro do array de carros estou buscando apenas por Corsa e dentro do array de nomes estou buscando apenas por Antonio
+        
+        console.log(cors, ant)
+    </script>
+</body>
+</html>

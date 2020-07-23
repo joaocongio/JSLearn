@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let produto = {
+            descricao: 'Geladeira',
+            preco: 2500,
+            modelo: 'GELA220',
+            detalhes: {
+                fabricante: 'LSAM',
+                ano: 2020
+            }
+        }
+
+        let { descricao, preco, modelo } = produto
+      // let { desc, prec, model } = produto = não reconhece a variável inserida, ela precisa ser identica a que foi criada no objeto ou atribuir um outro nome, como na linha abaixo
+        let { descricao: desc, preco: prec, modelo: model } = produto
+
+        let { detalhes: {fabricante}} = produto // = acessando o atributo fabricante dentro de detalhes
+        let { detalhes: {fabricante: fab}} = produto
+
+        console.log(fabricante)
+        console.log(fab)
+        console.log(descricao, preco, modelo)
+        console.log(desc, prec, model)
+    </script>
+</body>
+</html>
